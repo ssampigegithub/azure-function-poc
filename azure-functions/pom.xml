@@ -11,6 +11,10 @@
 	<name>azure-functions</name>
 	<description>POC to demonstrate Azure Functions</description>
 	
+	<properties>
+		<start-class>com.example.FunctionsStarterApp</start-class>	
+	</properties>
+	
  	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>

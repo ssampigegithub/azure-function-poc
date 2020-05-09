@@ -8,7 +8,7 @@ import java.io.IOException;
 
 import org.springframework.cloud.function.adapter.azure.AzureSpringBootRequestHandler;
 
-import com.example.SpringBootStarterApp;
+import com.example.FunctionsStarterApp;
 
 
 

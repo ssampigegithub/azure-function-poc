@@ -13,7 +13,7 @@ import com.microsoft.azure.functions.ExecutionContext;
 
 
 @SpringBootApplication
-public class SpringBootStarterApp //implements ApplicationContextInitializer<GenericApplicationContext>
+public class FunctionsStarterApp
 {
 	
 	//@Autowired
@@ -42,7 +42,7 @@ public class SpringBootStarterApp //implements ApplicationContextInitializer<Gen
 	
 	public static void main(String args[])
 	{
-		SpringApplication.run(SpringBootStarterApp.class, args);
+		SpringApplication.run(FunctionsStarterApp.class, args);
 		System.out.println("Started Spring Boot application.");
 		try
 		{
