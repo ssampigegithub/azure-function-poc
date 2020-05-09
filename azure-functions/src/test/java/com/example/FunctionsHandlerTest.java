@@ -10,7 +10,7 @@ import org.springframework.cloud.function.adapter.azure.AzureSpringBootRequestHa
 
 import com.example.SpringBootStarterApp;
 
-import static org.assertj.core.api.Assertions.assertThat;
+
 
 class FunctionsHandlerTest
 {
