@@ -20,6 +20,12 @@ public class FunctionsStarterApp
 	//private ExecutionContext azureExecutionContext;
 	
 	@Bean
+    public Function<String, String> uppercase() 
+	{
+        return v -> v.toUpperCase();
+    }	
+	
+	@Bean
 	public Function<String, String> loadClaims(ExecutionContext context) 
 	{
 		return value -> 
@@ -28,17 +34,6 @@ public class FunctionsStarterApp
 			return value.toUpperCase();
 		};
 	}	
-	
-	/*@Bean
-	public Function<String, String> loadSpecialtyDrugs(ExecutionContext context) 
-	{
-		return value -> 
-		{
-			context.getLogger().info("loadSpecialtyDrugs function... " + value);
-			return value.toUpperCase();
-		};
-	}	
-	*/
 	
 	public static void main(String args[])
 	{

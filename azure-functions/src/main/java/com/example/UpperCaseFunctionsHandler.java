@@ -11,13 +11,13 @@ import java.util.Optional;
 
 import org.springframework.cloud.function.adapter.azure.AzureSpringBootRequestHandler;
 
-public class FunctionsHandler extends AzureSpringBootRequestHandler<String, String> {
-
-	@FunctionName("loadClaims")
+public class UpperCaseFunctionsHandler extends AzureSpringBootRequestHandler<String, String> 
+{
+	@FunctionName("uppercase")
 	public String execute(@HttpTrigger(name = "req", methods = {HttpMethod.GET,
 			HttpMethod.POST}, authLevel = AuthorizationLevel.ANONYMOUS) HttpRequestMessage<Optional<String>> request,
-		ExecutionContext context) {
+		ExecutionContext context) 
+	{
 		return handleRequest(request.getBody().get(), context);
 	}
-
 }
