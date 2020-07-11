@@ -22,10 +22,11 @@ public class FunctionsStarterApp
 	@Bean
     public Function<String, String> uppercase() 
 	{
+		System.out.println("This is the upper case function !");
         return v -> v.toUpperCase();
     }	
 	
-	@Bean
+	/*@Bean
 	public Function<String, String> loadClaims(ExecutionContext context) 
 	{
 		return value -> 
@@ -33,7 +34,7 @@ public class FunctionsStarterApp
 			context.getLogger().info("loadClaims function... " + value);
 			return value.toUpperCase();
 		};
-	}	
+	}*/	
 	
 	public static void main(String args[])
 	{
