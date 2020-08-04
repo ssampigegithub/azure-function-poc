@@ -35,7 +35,7 @@
           <resourceGroup>ssampige-01</resourceGroup>
           <appName>azure-microservices-poc-1589147654615</appName>
           <pricingTier>P1v2</pricingTier>
-          <region>westeurope</region>
+          <region>centralus</region>
           <runtime>
             <os>linux</os>
             <javaVersion>jre8</javaVersion>
